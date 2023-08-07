@@ -1,0 +1,75 @@
+*,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-custom {            
+    background-color: #ffff00eb !important;
+}
+
+.calculator {
+    background-color: black;
+    padding: 50px 0 50px 0;
+    height: 100vh;
+    @media screen and (max-width: 576px){
+        padding: 10px 0 10px 0;
+    }
+    .row {
+        .cal-body {
+            .cal-input {
+                display: flex;
+                flex-direction: column;
+    
+                label {
+                    color: white;
+                    text-shadow: 1px 1px 2px #ffff00eb;
+                    font-size: 24px;
+                    font-style: bold;
+                    margin-left: 10px;
+                }
+                input {
+                    width: 50%;
+                    padding: 10px;
+                    border-radius: 25px;
+                    margin-top: 10px;
+                    font-size: 24px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    @media screen and (max-width: 576px){
+                        font-size: 16px;
+                    }
+                    
+                    &#operator{
+                        width: 40%;
+                    }
+                    &#result{
+                        width: 20%;
+                        background-color: #ffff00eb;
+                    }
+                }
+            }
+            button {
+                margin-top: 30px;
+                padding: 10px;
+                background-color: #ffff00eb;
+                border-radius: 25px;
+                margin-right: 10px;
+                @media screen and (max-width: 576px){
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        
+        .cal-instruction {
+            background-color: #ffff00eb;
+            padding: 50px;
+            border-radius: 25px;
+            font-style: italic;
+            @media screen and (max-width: 576px){
+                padding: 15px;
+                margin: 5%;
+                width: 90%;
+            }
+        }
+    }
+}
